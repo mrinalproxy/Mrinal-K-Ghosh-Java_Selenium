@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-18T14:41:56 IST" name="CalculatorTestSuite" finished-at="2025-08-18T14:41:56 IST" duration-ms="74">
+    <groups>
+    </groups>
+    <test started-at="2025-08-18T14:41:56 IST" name="CalculatorTestCases" finished-at="2025-08-18T14:41:56 IST" duration-ms="74">
+      <class name="com.example.testng.CalculatorTest">
+        <test-method signature="testAddition()[pri:1, instance:com.example.testng.CalculatorTest@359f7cdf]" started-at="2025-08-18T14:41:56 IST" name="testAddition" finished-at="2025-08-18T14:41:56 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddition -->
+        <test-method signature="testSubtraction()[pri:2, instance:com.example.testng.CalculatorTest@359f7cdf]" started-at="2025-08-18T14:41:56 IST" name="testSubtraction" finished-at="2025-08-18T14:41:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtraction -->
+        <test-method signature="testMultiplication()[pri:3, instance:com.example.testng.CalculatorTest@359f7cdf]" started-at="2025-08-18T14:41:56 IST" name="testMultiplication" finished-at="2025-08-18T14:41:56 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplication -->
+        <test-method signature="testDivision()[pri:4, instance:com.example.testng.CalculatorTest@359f7cdf]" started-at="2025-08-18T14:41:56 IST" name="testDivision" finished-at="2025-08-18T14:41:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivision -->
+      </class> <!-- com.example.testng.CalculatorTest -->
+    </test> <!-- CalculatorTestCases -->
+  </suite> <!-- CalculatorTestSuite -->
+</testng-results>

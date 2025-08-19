@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drag and Drop Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    #drag {
+      width: 100px;
+      height: 100px;
+      background-color: #4CAF50;
+      color: white;
+      line-height: 100px;
+      text-align: center;
+      border-radius: 8px;
+      cursor: move;
+      margin: 20px auto;
+    }
+
+    #drop {
+      width: 200px;
+      height: 150px;
+      border: 3px dashed #333;
+      border-radius: 8px;
+      margin: 0 auto;
+      line-height: 150px;
+      font-size: 20px;
+      color: #555;
+    }
+
+    #drop.dropped {
+      border: 3px solid green;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Drag and Drop Example</h2>
+  <div id="drag" draggable="true">Drag Me</div>
+  <div id="drop">Drop Here</div>
+
+  <script>
+    document.getElementById("drop").addEventListener("dragover", function(event) {
+      event.preventDefault();
+    });
+
+    document.getElementById("drop").addEventListener("drop", function(event) {
+      event.preventDefault();
+      var drag = document.getElementById("drag");
+      this.appendChild(drag);
+      this.textContent = "Dropped!";
+      this.classList.add("dropped");
+    });
+  </script>
+</body>
+</html>

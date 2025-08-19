@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+  <test name="Calculator2 Tests">
+    <classes>
+      <!-- Your old test classes -->
+      <class name="com.example2.AppTest"/>
+      
+      <!-- New Selenium class -->
+      <class name="com.example2.SeleniumLocalHtmlByXpath"/>
+    </classes>
+  </test>
+</suite>

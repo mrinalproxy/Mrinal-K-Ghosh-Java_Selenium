@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Simple Login</title>
+</head>
+<body>
+  <h2>Login Page</h2>
+  <form id="loginForm" action="#" method="post">
+    <label>Username:
+      <input type="text" name="username" />
+    </label><br/><br/>
+    <label>Password:
+      <input type="password" name="password" />
+    </label><br/><br/>
+    <button type="submit">Login</button>
+  </form>
+
+  <div id="result" style="margin-top:20px;color:green;"></div>
+
+  <script>
+    // prevent real submit: show posted values (so Selenium can submit and we can see result)
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const u = this.username.value;
+      const p = this.password.value;
+      document.getElementById('result').textContent = 'Submitted -> ' + u + ' / ' + p;
+    });
+  </script>
+</body>
+</html>
