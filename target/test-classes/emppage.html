@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Employee Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+body { font-family: Arial, Helvetica, sans-serif; padding: 24px; }
+.container { max-width: 420px; margin: 0 auto; }
+.hidden { display: none; }
+#dashboard { margin-top: 20px; padding: 12px; border: 1px solid #ccc; }
+</style>
+<script>
+function doLogin() {
+var u = document.getElementById('username').value;
+var p = document.getElementById('password').value;
+// simple, client-side check (for demo only)
+if (u === 'admin' && p === 'admin123') {
+document.getElementById('loginForm').classList.add('hidden');
+document.getElementById('dashboard').classList.remove('hidden');
+document.getElementById('welcomeMsg').innerText = 'Welcome, ' + u + '!';
+} else {
+alert('Invalid credentials');
+}
+}
+</script>
+</head>
+<body>
+<div class="container">
+<h1>Employee Page</h1>
+
+
+<div id="loginForm">
+<label for="username">Username</label><br />
+<input id="username" type="text" placeholder="username" /><br /><br />
+
+
+<label for="password">Password</label><br />
+<input id="password" type="password" placeholder="password" /><br /><br />
+
+
+<button id="loginBtn" onclick="doLogin()">Login</button>
+</div>
+
+
+<div id="dashboard" class="hidden">
+<h2 id="welcomeMsg"></h2>
+<p id="dashboardText">This is the dashboard area visible after a successful login.</p>
+</div>
+</div>
+</body>
+</html>
